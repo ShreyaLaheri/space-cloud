@@ -12,6 +12,7 @@ import Overview from  './pages/overview/Overview'
 import Welcome from "./pages/welcome/Welcome"
 import CreateProject from "./pages/create-project/CreateProject"
 import Billing from "./pages/billing/Billing"
+import Deploy from './pages/deploy/Deploy';
 
 export default () => {
   return (
@@ -30,6 +31,7 @@ export default () => {
       <Route exact path="/mission-control/projects/:projectId/file-storage/rules" component={FileStorageRules} />
       <Route exact path="/mission-control/projects/:projectId/configure" component={Configure} />
       <Route exact path="/mission-control/projects/:projectId/billing" component={Billing} />
+      <Route exact path="/mission-control/projects/:projectId/deploy" component={Deploy} />
     </Router>
   )
 }

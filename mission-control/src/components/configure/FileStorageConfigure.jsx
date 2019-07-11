@@ -14,7 +14,7 @@ function FileStorageConfigure(props) {
 				<div className="conn-form-options">
 					<Form.Item>
 						{getFieldDecorator('storeType', {
-							rules: [ { required: true, message: '' } ]
+							rules: [{ required: true, message: '' }]
 						})(
 							<Select placeholder="Store Type" className="select">
 								<Option value="local">Local</Option>
@@ -29,7 +29,7 @@ function FileStorageConfigure(props) {
 				<div className="conn-form-cert">
 					<Form.Item className="conn-form-cert-input">
 						{getFieldDecorator('conn', {
-							rules: [ { required: true, message: '' } ]
+							rules: [{ required: true, message: '' }]
 						})(<Input style={{ width: 600 }} placeholder="Enter Connection String" />)}
 					</Form.Item>
 				</div>

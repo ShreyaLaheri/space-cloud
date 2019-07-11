@@ -46,8 +46,12 @@ class Sidenav extends Component {
         <Link to={`/mission-control/projects/${this.props.projectId}/configure`}>
           <SidenavItem name="Configure" icon="settings" active={this.props.selectedItem === 'configure'} />
         </Link>
+        <hr />
         <Link to={`/mission-control/projects/${this.props.projectId}/billing`}>
           <SidenavItem name="Billing" icon="attach_money" active={this.props.selectedItem === 'billing'} />
+        </Link>
+        <Link to={`/mission-control/projects/${this.props.projectId}/deploy`}>
+          <SidenavItem name="Deploy" icon="attach_money" active={this.props.selectedItem === 'deploy'} />
         </Link>
         <EditItemModal graphics={projectId} heading="Project ID" name="Give a project ID" desc="You need to use the same project ID to initialize the client." placeholder="Enter a project ID" initialValue={this.props.projectId} visible={this.state.modalVisible} handleCancel={() => this.handleModalVisiblity(false)} handleSubmit={this.props.handleSubmit} />
       </div>
